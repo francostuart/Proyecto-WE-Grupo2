@@ -1,0 +1,244 @@
+:root{
+    --color-primario:#000;
+    --color-secundario:#00adb5;
+    --texto-principal: #000;
+    --texto-secundario: #fffcfc;    
+    --texto-terciario: #3D3333;
+    --color-boton: #100F0F;
+    --fondo-alternativo: #FCFCFC;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+}
+
+/* ============= INICIO HEADER =================*/
+
+.header{
+    background-color: var(--color-primario);
+}
+
+.menu{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img{
+    width: 300px;
+    margin-left: 4em;
+}
+
+.enlaces a{
+    color: var(--texto-secundario);
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    margin-left: 1.5em;
+
+}
+
+/*  ============= FIN HEADER =============*/
+
+/* ============= INICIO BANNER HERO ============= */
+
+.container-hero{
+    background-color: var(--color-secundario);
+    /* width: 100%; */
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+.hero-nombre{
+    width: 60%;
+    /* background-color: yellow; */
+    /* border:1px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+}
+
+.hero-img{
+    /* background-color: red; */
+    width: 40%;
+}
+
+.titulo-hero{
+    color: var(--texto-secundario);
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 4em;
+    text-align: center;
+    line-height: 1em;
+    margin-bottom: .5em;
+}
+
+.parrafo-hero{
+    color: var(--texto-terciario);
+    /* font-family: "Roboto", sans-serif; */
+    font-weight: 500;
+    max-width: 50%;
+    margin-bottom: 2em;
+    text-align: center;
+    /* margin-right: auto;
+    margin-left: auto; */
+}
+
+.btn-hero{
+    padding: 10px 25px ;
+    border: 2px solid #fff;
+    border-radius: 1.2em;
+    background-color: var(--color-boton);
+    text-decoration: none;
+    color: var(--texto-secundario);
+}
+/* ============= FIN BANNER HERO ============= */
+
+
+
+/* SECCION 3 */
+
+.container-steps{
+    background-color: var(--fondo-alternativo);
+}
+
+.titulo-steps{
+    font-family: "Poppins",sans-serif;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: .5em;
+    margin-top: 1.2em;
+}
+
+.parrafo-steps{
+    text-align: center;
+    max-width: 80%;
+    /* border: 1px solid red; */
+    margin: 0 auto;
+    color: var(--texto-terciario);
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 1em;
+    
+}
+
+.titulo-principal-steps{
+    text-align: center;
+    margin-bottom: .7em;
+    font-size: 2.5em;
+    font-family: "Poppins",sans-serif;
+    font-weight: 600;
+    line-height: 1em;
+}
+
+.subtitulo-steps{
+    font-family: "Poppins",sans-serif;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-bottom: 1.4em;
+}
+
+.container-process{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;    
+    /* align-items: center; */
+    /* border: 1px solid red; */
+    margin: 0 auto;
+    
+    
+}
+
+.card-process{
+    /* border: 1px solid #000; */
+    width: 26.6%;
+    padding: 1em;
+    text-align: center;
+    background-color: #fff;
+}
+
+.card-process > img{
+    width: 35%;
+}
+
+
+.title-process{
+     line-height: 1em;
+     margin-bottom: .3em;
+}
+
+
+
+
+    /* max-width: 80%; */
+
+
+
+
+    /* CARDS - SERVICES */
+
+.container-services{
+    background-color: var(--color-primario);
+    color: #fff;
+}
+
+.title-services,.title-principal-services,.parrafo-services{
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+/* h3.title-services{
+    margin-top: 5em;
+} */
+
+
+.container-services-cards{
+    border: 1px solid red;
+    /* display: grid;
+    gap: 1.5em;
+    grid-template-columns: repeat(auto-fill, minmax(350px,1fr)); */
+
+
+
+    display: grid;
+    gap: 1.5em;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    justify-content: center; 
+    /* align-items: center; */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+        
+
+.services-card > img{
+    width: 170px;
+}
+
+
+
+
+.container-form{
+    background-color: var(--color-secundario);
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.section-img > img{
+    width: 500px;
+}
+
+
+input{
+    display: block;
+}
+
