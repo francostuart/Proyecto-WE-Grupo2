@@ -201,7 +201,7 @@
 
 
 .container-services-cards{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     /* display: grid;
     gap: 1.5em;
     grid-template-columns: repeat(auto-fill, minmax(350px,1fr)); */
@@ -229,16 +229,123 @@
     background-color: var(--color-secundario);
     display: flex;
     justify-content: space-between;
+    /* border: 1px solid red; */
+    padding-top: 2em;
+    color: var(--fondo-alternativo);
+    font-family: "Roboto", sans-serif;
 }
 
-
+.section-img{
+    width: 50%;
+}
 
 .section-img > img{
     width: 500px;
+    margin-left: 4em;
 }
 
+
+.form{
+    width: 50%;
+    margin-left: 5em;
+}
 
 input{
     display: block;
 }
+
+
+label,input{
+    width: 300px;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    padding: .5em;
+}
+
+
+textarea{
+    display: block;
+}
+
+
+input[type="submit"]{
+    background-color: #000;
+    color: var(--texto-secundario);
+    width: 200px;
+}
+
+.title-form{
+font-size: 2em;
+}
+
+.title-form,.parrafo-form{
+    background-color: var(--color-secundario);
+    text-align: center;
+    color: var(--fondo-alternativo);
+    font-family: "Poppins",sans-serif;
+    font-weight: 500;
+    padding-top: 20px;
+    
+}
+
+@media screen and (max-width: 1023px){
+
+    .menu{
+        flex-direction: column;
+    }
+
+    /* .logo{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        padding: .5em;
+    } */
+
+    .hero-nombre{
+        width: 100%;
+        margin-top: 20px;
+    }
+
+
+    .enlaces{
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .container-hero{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        
+
+    }
+
+
+
+
+    .container-process{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .card-process{
+        width: 100%;
+    }
+
+
+
+    .container-form{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-services-cards{
+        text-align: center;
+    }
+
+}
+
 
